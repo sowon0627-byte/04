@@ -3,18 +3,24 @@
 
 int main(int argc, char *argv[])
 {
-    int x,y,z,m;
-    int a,b,c;
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
+    int i,j;
+    int a,b,c,d,e;
     
-    y = a*x*x + b*x + c;
-    m = (x + y + z)/3;
+    printf("input two integers\n");
+    scanf("%d%d", &i,&j);
+    printf("input two integers : %d %d\n", i,j);
     
-    printf("y=%d, m=%d", y,m);
+    a = i + j;
+    b = i - j;
+    c = i * j;
+    d = i / j;
+    e = i % j;
+    
+    printf("+ result is %d\n", a);
+    printf("- result is %d\n", b);
+    printf("* result is %d\n", c);
+    printf("/ result is %d\n", d);
+    printf("%% result is %d\n", e);
   
   system("PAUSE");	
   return 0;
