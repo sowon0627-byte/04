@@ -3,15 +3,13 @@
 
 int main(int argc, char *argv[])
 {
-    int x,y,z;
+    int year;
     
-    printf("input the second : ");
-    scanf("%i", &x);
+    printf("input the year : ");
+    scanf("%d", &year);
     
-    y = x / 60;
-    z = x % 60;
-    
-    printf("the time is %i : %i\n", y, z);
+    printf("is the year %d the leap year? : %d\n",
+           year, (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
     
   system("PAUSE");	
   return 0;
